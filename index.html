@@ -6,7 +6,6 @@
   <meta name="keywords" content="HTML, CSS, JS, React"/>
   <meta name="author" content="Yuliya Alexandrova"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
   <title>Урок 3</title>
 </head>
 <body>
@@ -89,6 +88,71 @@
   </tr>
   </tbody>
 </table>
+<br/>
+<form action="'/'" method="get" name="form">
+  <fieldset>
+    <legend>My first form</legend>
+    <div>
+      <label for="name"> Name </label><br/>
+      <input
+          type="text"
+          id="name"
+          name="Name"
+          placeholder="Name"
+          required
+      />
+    </div>
+    <div>
+      <label for="email">Email</label><br/>
+      <input type="email" name="email" id="email" required/>
+    </div>
+    <div>
+      <label for="password">Password</label><br/>
+      <input type="password" name="password" id="password" required/>
+    </div>
+    <p>
+      <label for="level">Your programming level</label><br/>
+      <input type="range" name="level" id="level" min="1" max="10"/>
+    </p>
+
+    <label>What does HTML stand for?</label><br/>
+    <p>
+      <input type="checkbox" id="box-1" name="box" value="1"/>
+      <label for="box-1">Hyperlinks and Text Markup Language</label><br/>
+      <input type="checkbox" id="box-2" name="box" value="2"/>
+      <label for="box-2">Home Tool Markup Language</label><br/>
+      <input type="checkbox" id="box-3" name="box" value="3"/>
+      <label for="box-3">Hyper Text Markup Language</label>
+    </p>
+    <label>What does HTML stand for?</label><br/>
+    <p>
+      <input type="radio" id="radio-1" name="radio" value="1"/>
+      <label for="radio-1">Hyper Text Translate Protocol</label><br/>
+      <input type="radio" id="radio-2" name="radio" value="2"/>
+      <label for="radio-2">Hyper Text Transmission Protocol</label><br/>
+      <input type="radio" id="radio-3" name="radio" value="3"/>
+      <label for="radio-3">Hyper Text Transfer Protocol</label>
+    </p>
+    <div>
+      <label for="comment">Comment</label><br/>
+      <textarea
+          id="comment"
+          name="comment"
+          maxlength="500"
+          placeholder="Comment"
+      ></textarea>
+    </div>
+    <div>
+      <label for="answer">What does HTML stand for?</label><br/>
+      <select name="answer" id="answer">
+        <option disabled selected>Your answer</option>
+      </select>
+    </div>
+    <p>
+      <button>Send</button>
+    </p>
+  </fieldset>
+</form>
 <hr/>
 </body>
 </html>
