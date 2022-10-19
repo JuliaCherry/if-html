@@ -1,6 +1,74 @@
-/* {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
-}/
+/*обнуление*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  height: 100%;
+}
+/*--------------------*/
+body {
+  line-height: 1;
+  font-family: Roboto;
+  font-size: 24px;
+  color: #383838;
+  max-width: 1440px;
+  max-height: 569px;
+}
+.title {
+  width: 306px;
+  height: 47px;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 120px 567px 0;
+}
+.highlight {
+  width: 100px;
+  height: 4px;
+  background-color: #f5bd41;
+  margin: 20px 670px 0;
+}
+.flex-container {
+  display: inline-flex;
+  width: 1232px;
+  height: 184px;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 80px 104px 114px;
+}
+.flex-container_support,
+.flex-container_communication,
+.flex-container_booking,
+.flex-container_reviews {
+  text-align: center;
+}
+.support-text {
+  margin-top: 50px;
+}
+.communication-text {
+  margin-top: 56px;
+}
+.booking-text {
+  margin-top: 65px;
+}
+.reviews-text {
+  margin-top: 60px;
+}
