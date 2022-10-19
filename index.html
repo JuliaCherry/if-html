@@ -9,6 +9,9 @@
     <title>Урок 3</title>
   </head>
   <body>
+    <h1>Моя первая страница</h1>
+    <p><a href="./about/">Об авторе</a></p>
+    <hr />
     <img src="./images/grapefruit.jpeg" alt="grapefruit" />
     <ol>
       <li>
@@ -89,11 +92,11 @@
       </tbody>
     </table>
     <br />
-    <form action="'/'" method="get" name="form">
+    <form action="'/'" method="get">
       <fieldset>
         <legend>My first form</legend>
         <div>
-          <label for="name"> Name </label><br />
+          <label for="name">Name</label><br />
           <input
             type="text"
             id="name"
@@ -116,20 +119,20 @@
         </p>
         <label>What does HTML stand for?</label><br />
         <p>
-          <input type="checkbox" id="box-1" name="box" value="1" />
+          <input type="checkbox" id="box-1" name="html" value="1" />
           <label for="box-1">Hyperlinks and Text Markup Language</label><br />
-          <input type="checkbox" id="box-2" name="box" value="2" />
+          <input type="checkbox" id="box-2" name="html" value="2" />
           <label for="box-2">Home Tool Markup Language</label><br />
-          <input type="checkbox" id="box-3" name="box" value="3" />
+          <input type="checkbox" id="box-3" name="html" value="3" />
           <label for="box-3">Hyper Text Markup Language</label>
         </p>
         <label>What does HTML stand for?</label><br />
         <p>
-          <input type="radio" id="radio-1" name="radio" value="1" />
+          <input type="radio" id="radio-1" name="http" value="1" />
           <label for="radio-1">Hyper Text Translate Protocol</label><br />
-          <input type="radio" id="radio-2" name="radio" value="2" />
+          <input type="radio" id="radio-2" name="http" value="2" />
           <label for="radio-2">Hyper Text Transmission Protocol</label><br />
-          <input type="radio" id="radio-3" name="radio" value="3" />
+          <input type="radio" id="radio-3" name="http" value="3" />
           <label for="radio-3">Hyper Text Transfer Protocol</label>
         </p>
         <div>
@@ -145,6 +148,8 @@
           <label for="answer">What does HTML stand for?</label><br />
           <select name="answer" id="answer">
             <option disabled selected>Your answer</option>
+            <option value="language">Hyper Text Markup Language</option>
+            <option value="protocol">Hyper Text Transfer Protocol</option>
           </select>
         </div>
         <p>
@@ -152,8 +157,5 @@
         </p>
       </fieldset>
     </form>
-    <hr />
-    <h1>Моя первая страница</h1>
-    <p><a href="./about/">Об авторе</a></p>
   </body>
 </html>
