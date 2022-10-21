@@ -29,12 +29,14 @@ body {
   font-family: Roboto;
   font-size: 24px;
   color: #383838;
+}
+.container {
   max-width: 1440px;
-  max-height: 569px;
+  margin: 0 auto;
+  padding: 120px 0 114px;
 }
 .title {
-  width: 306px;
-  height: 47px;
+  text-align: center;
   font-size: 40px;
   font-weight: 500;
   margin: 120px 567px 0;
@@ -46,10 +48,7 @@ body {
   margin: 20px 670px 0;
 }
 .flex-container {
-  display: inline-flex;
-  width: 1232px;
-  height: 184px;
-  flex-wrap: nowrap;
+  display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 80px 104px 114px;
