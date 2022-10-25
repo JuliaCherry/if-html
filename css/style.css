@@ -84,6 +84,7 @@ body {
   background-color: #10367c;
   color: #ffffff;
   font-size: 20px;
+  margin: 0 auto;
 }
 .contain {
   display: flex;
