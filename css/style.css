@@ -78,3 +78,39 @@ body {
   margin-top: 60px;
   display: inline-block;
 }
+.footer {
+  width: 1440px;
+  height: 625px;
+  background-color: #10367c;
+  color: #ffffff;
+  font-size: 20px;
+}
+.contain {
+  display: flex;
+  margin: 0 auto;
+  padding: 120px 272px 120px 104px;
+  line-height: 2.3em;
+  flex-wrap: wrap;
+  row-gap: 30%;
+}
+h2 {
+  font-weight: 500;
+}
+.about {
+  width: 193px;
+  height: 211px;
+  margin-right: 223px;
+}
+.property {
+  width: 133px;
+  height: 305px;
+  margin-right: 283px;
+}
+.support2 {
+  width: 232px;
+  height: 117px;
+}
+.copyright {
+  font-size: 14px;
+  margin-top: 64px;
+}
