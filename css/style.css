@@ -34,13 +34,13 @@ body {
 .offer {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 120px 0 114px;
+  padding: 114px 0 120px;
 }
 .title {
   text-align: center;
   font-size: 40px;
   font-weight: 500;
-  margin: 120px 0 20px;
+  margin-bottom: 20px;
 }
 .highlight {
   width: 100px;
@@ -52,7 +52,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 80px 104px 114px;
+  margin: 80px 104px 0;
 }
 .support,
 .communication,
