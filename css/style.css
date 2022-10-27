@@ -1,13 +1,64 @@
 @import url(./fonts.css);
-/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');*/
-/*обнуление*/
-*,
-*::before,
-*::after {
+/*Обнуление*/
+* {
   padding: 0;
   margin: 0;
   border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
 }
 img {
   vertical-align: top;
@@ -18,12 +69,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: inherit;
   font-size: inherit;
-}
-html,
-body {
-  height: 100%;
+  font-weight: inherit;
 }
 /*--------------------*/
 body {
@@ -31,10 +78,15 @@ body {
   font-size: 24px;
   color: #383838;
 }
+a {
+  color: #ffffff;
+}
+.heading {
+  font-weight: 500;
+}
 h2.heading {
   text-align: center;
   font-size: 40px;
-  font-weight: 500;
 }
 .advantages {
   display: flex;
@@ -43,7 +95,7 @@ h2.heading {
   flex-direction: column;
   margin: 0 auto;
   gap: 80px;
-  padding: 120px 104px 114px
+  padding: 120px 104px 114px;
 }
 .advantages-tittle {
   display: flex;
@@ -69,41 +121,26 @@ h2.heading {
   align-items: center;
   gap: 50px;
 }
-
-.footer {
-  width: 1440px;
-  height: 625px;
+footer {
+  display: flex;
+  flex-direction: column;
   background-color: #10367c;
   color: #ffffff;
   font-size: 20px;
   margin: 0 auto;
+  gap: 64px;
+  padding: 120px 272px 104px;
 }
-.contain {
+.footer-menu {
   display: flex;
-  margin: 0 auto;
-  padding: 120px 272px 120px 104px;
   line-height: 2.3em;
-  flex-wrap: wrap;
-  row-gap: 30%;
+  justify-content: space-between;
+  width: 1064px;
 }
-h3 {
-  font-weight: 500;
-}
-.about {
-  width: 193px;
-  height: 211px;
-  margin-right: 223px;
-}
-.property {
-  width: 133px;
-  height: 305px;
-  margin-right: 283px;
-}
-.support2 {
-  width: 232px;
-  height: 117px;
+.menu-link {
+  display: flex;
+  flex-direction: column;
 }
 .copyright {
   font-size: 14px;
-  margin-top: 64px;
 }
