@@ -137,9 +137,12 @@ footer {
   justify-content: space-between;
   width: 1064px;
 }
-.menu-link {
+.menu {
   display: flex;
   flex-direction: column;
+}
+.col {
+  width: 416px;
 }
 .copyright {
   font-size: 14px;
