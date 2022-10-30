@@ -124,7 +124,7 @@ h2.heading {
   gap: 20px;
 }
 
-.highlight {
+.underline {
   width: 100px;
   height: 4px;
   background-color: #f5bd41;
@@ -154,7 +154,7 @@ h2.heading {
   padding: 120px 272px 120px 104px;
 }
 
-.contain {
+.footer__contain {
   display: flex;
   line-height: 2.3em;
   flex-wrap: wrap;
@@ -162,17 +162,21 @@ h2.heading {
   row-gap: 42px;
 }
 
-.about {
+.contain__about {
   width: 193px;
   margin-right: 223px;
 }
 
-.property {
+.bold-headline {
+  font-weight: 500;
+}
+
+.contain__property {
   width: 133px;
   margin-right: 280px;
 }
 
-.support2 {
+.contain__support {
   width: 234px;
 }
 
