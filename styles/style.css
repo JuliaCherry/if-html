@@ -1,5 +1,5 @@
 @import url(./fonts.css);
-/*Обнуление*/
+/*пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ*/
 * {
   padding: 0;
   margin: 0;
@@ -77,6 +77,7 @@ body {
   font-family: Roboto, sans-serif;
   font-size: 24px;
   color: #383838;
+  margin: 0 auto;
 }
 a {
   color: #ffffff;
@@ -121,28 +122,31 @@ h2.heading {
   align-items: center;
   gap: 50px;
 }
-footer {
-  display: flex;
-  flex-direction: column;
+.footer {
+  max-width: 1440px;
+  height: 625px;
   background-color: #10367c;
   color: #ffffff;
   font-size: 20px;
-  margin: 0 auto;
-  gap: 64px;
-  padding: 120px 272px 104px;
+  padding: 120px 272px 120px 104px;
 }
-.footer-menu {
+.contain {
   display: flex;
   line-height: 2.3em;
-  justify-content: space-between;
+  flex-wrap: wrap;
   width: 1064px;
+  row-gap: 42px;
 }
-.menu {
-  display: flex;
-  flex-direction: column;
+.about {
+  width: 193px;
+  margin-right: 223px;
 }
-.col {
-  width: 416px;
+.property {
+  width: 133px;
+  margin-right: 280px;
+}
+.support2 {
+  width: 234px;
 }
 .copyright {
   font-size: 14px;
