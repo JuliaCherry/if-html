@@ -98,11 +98,11 @@ a {
   color: #ffffff;
 }
 
-.heading {
+.subtitle {
   font-weight: 500;
 }
 
-h2.heading {
+h2.subtitle {
   text-align: center;
   font-size: 40px;
 }
