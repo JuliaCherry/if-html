@@ -92,7 +92,7 @@ body {
   font-size: 24px;
   color: #383838;
   margin: 0 auto;
-  max-width: 1440px;
+  width: 100%;
 }
 
 a {
@@ -147,11 +147,13 @@ a {
   background-color: #10367c;
 }
 
-.footer__container {
+.footer__container-item {
   padding: 120px 272px 120px 104px;
   font-size: 20px;
   color: #ffffff;
   line-height: 46px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .footer__container-top {
   display: flex;
@@ -170,7 +172,7 @@ a {
   margin-right: 283px;
 }
 
-.footer__container-bottom {
+.footer__container-content {
   font-size: 14px;
   margin-top: 64px;
 }
