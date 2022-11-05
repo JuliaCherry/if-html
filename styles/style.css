@@ -155,24 +155,17 @@ a {
   display: flex;
   flex-wrap: wrap;
 }
-.footer__container-top {
-  display: flex;
-  height: 305px;
-}
 
 .footer__container-subtitle {
   font-weight: 500;
 }
 
-.footer__container-about {
-  margin-right: 223px;
-}
-
+.footer__container-about,
 .footer__container-property {
-  margin-right: 283px;
+  width: 37%;
 }
 
 .footer__container-copyright {
   font-size: 14px;
-  margin-top: 64px;
+  margin-top: 44px;
 }
