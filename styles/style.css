@@ -1,79 +1,174 @@
-/*обнуление*/
-*,
-*::before,
-*::after {
+@import url("./fonts.css");
+
+* {
   padding: 0;
   margin: 0;
   border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
 img {
   vertical-align: top;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-weight: inherit;
   font-size: inherit;
+  font-weight: inherit;
 }
-html,
+
 body {
-  height: 100%;
-}
-/*--------------------*/
-body {
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   color: #383838;
 }
-.offer {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 120px 0 114px;
+
+a {
+  color: #ffffff;
 }
-.title {
+
+.advantages__container-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+  padding-top: 120px;
+  padding-bottom: 114px;
+}
+
+.advantages__container-subtitle {
   text-align: center;
   font-size: 40px;
   font-weight: 500;
-  margin: 120px 0 20px;
 }
-.highlight {
-  width: 100px;
-  height: 4px;
-  background-color: #f5bd41;
-  margin: 0 auto;
 
-}
-.container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 80px 104px 114px;
-}
-.support,
-.communication,
-.booking,
-.reviews {
+.advantages__container-tittle {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
 }
-.support-text {
-  margin-top: 50px;
-  display: inline-block;
+
+.advantages__container-underline {
+  width: 100px;
+  height: 4px;
+  background-color: #f5bd41;
+  border: none;
 }
-.communication-text {
-  margin-top: 56px;
-  display: inline-block;
+
+.advantages__container-content {
+  display: flex;
+  gap: 16px;
 }
-.booking-text {
-  margin-top: 65px;
-  display: inline-block;
+
+.advantages__container-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  width: 296px;
 }
-.reviews-text {
-  margin-top: 60px;
-  display: inline-block;
+
+.footer {
+  background-color: #10367c;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1264px;
+  padding: 0 16px;
+}
+
+.footer__container-item {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 46px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__container-subtitle {
+  font-weight: 500;
+}
+
+.footer__container-about,
+.footer__container-property {
+  width: 33.333%;
+}
+
+.footer__container-copyright {
+  font-size: 14px;
+  margin-top: 44px;
 }
