@@ -8,35 +8,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./images/favicon/favicon-32x32.png" />
     <link rel="stylesheet" href="styles/style.css" />
-    <title>lesson-5</title>
+    <title>lesson-6</title>
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <div class="header__top-inner">
+            <div class="logo">
+              <a class="logo__home" href="#">
+                <div class="logo__img"></div>
+              </a>
+            </div>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__link menu__link--active" href="#">Stays</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__link" href="#">Attractions</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__link" href="#">
+                    <div class="menu__link menu__link--theme"></div>
+                  </a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__link" href="#">
+                    <div class="menu__link menu__link--account"></div>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="header-content">
+        <div class="container">
+          <div class="header__content-inner">
+            <h1 class="header__content-tittle">
+              Discover stays <br />
+              to live, work or just relax
+            </h1>
+            <form class="search" action="/" method="get">
+              <div class="search__content">
+                <label class="search__content-label" for="destination"
+                  >Your destination or hotel name</label
+                >
+                <input
+                  class="search__content-destination"
+                  type="text"
+                  id="destination"
+                  placeholder="New York"
+                />
+              </div>
+              <div class="search__content search__content--date">
+                <label class="search__content-label" for="date"
+                  >Check-in — Check-out</label
+                >
+                <input
+                  class="search__content-date"
+                  type="text"
+                  id="date"
+                  placeholder="Tue 15 Sept — Sat 19 Sept"
+                />
+              </div>
+              <div class="search__content search__content--pax">
+                <label class="search__content-label" for="pax"></label>
+                <input
+                  class="search__content-pax"
+                  type="text"
+                  id="pax"
+                  placeholder="2 Adults — 0 Children — 1 Room"
+                />
+              </div>
+              <button class="search__content-btn" type="submit">Search</button>
+            </form>
+            <div class="social">
+              <div class="social__item">
+                <a class="social__item-link" href="#">
+                  <div class="social__item social__item--google-play"></div>
+                </a>
+              </div>
+              <div class="social__item">
+                <a class="social__item-link" href="#">
+                  <div class="social__item social__item--app-store"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <div class="advantages">
       <div class="container">
         <div class="advantages__container-item">
-      <div class="advantages__container-tittle">
-        <h2 class="advantages__container-subtitle">What do we offer</h2>
-        <div class="advantages__container-underline"></div>
-      </div>
-      <div class="advantages__container-content">
-        <div class="advantages__container-image">
-          <img src="./images/support.png" alt="support" />
-          <span>Support 24/7</span>
+          <div class="advantages__container-tittle">
+            <h2 class="advantages__container-subtitle">What do we offer</h2>
+            <div class="advantages__container-underline"></div>
+          </div>
+          <div class="advantages__container-content">
+            <div class="advantages__container-image">
+              <img src="./images/support.png" alt="support" />
+              <span>Support 24/7</span>
+            </div>
+            <div class="advantages__container-image">
+              <img src="./images/communication.png" alt="communication" />
+              <span>Communicate directly</span>
+            </div>
+            <div class="advantages__container-image">
+              <img src="./images/booking.png" alt="booking" />
+              <span>Book online</span>
+            </div>
+            <div class="advantages__container-image">
+              <img src="./images/reviews.png" alt="reviews" />
+              <span>Real guest reviews</span>
+            </div>
+          </div>
         </div>
-        <div class="advantages__container-image">
-          <img src="./images/communication.png" alt="communication" />
-          <span>Communicate directly</span>
-        </div>
-        <div class="advantages__container-image">
-          <img src="./images/booking.png" alt="booking" />
-          <span>Book online</span>
-        </div>
-        <div class="advantages__container-image">
-          <img src="./images/reviews.png" alt="reviews" />
-          <span>Real guest reviews</span>
-        </div>
-        </div>
-      </div>
       </div>
     </div>
     <footer class="footer">
