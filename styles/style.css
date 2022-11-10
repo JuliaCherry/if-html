@@ -205,23 +205,27 @@ a {
   height: 64px;
   text-indent: 24px;
   line-height: 21px;
-  border-top: 3px solid #f3f3f4;
-  border-bottom: 3px solid #f3f3f4;
-  border-left: 3px solid #f3f3f4;
+  border: 3px solid transparent;
   border-radius: 8px 0 0 8px;
 }
+
+.search__content-destination:focus {
+  border: 3px solid #f5bd41;
+  border-radius: 8px;
+}
+
 .search__content--date {
   position: absolute;
   top: 0;
   left: 476px;
   z-index: 1;
 }
+
 .search__content-date {
   width: 260px;
   height: 64px;
   line-height: 21px;
-  border-top: 3px solid #f3f3f4;
-  border-bottom: 3px solid #f3f3f4;
+  border: 3px solid transparent;
   text-align: center;
 }
 
@@ -236,14 +240,20 @@ a {
   height: 64px;
   font-size: 18px;
   line-height: 21px;
-  border-top: 3px solid #f3f3f4;
-  border-bottom: 3px solid #f3f3f4;
+  border: 3px solid transparent
 }
+
+.search__content-pax:focus {
+  border: 3px solid #f5bd41;
+  border-radius: 8px;
+}
+
 .search__content--pax {
   position: absolute;
   top: 21px;
   left: 730px;
 }
+
 .search__content-btn {
   width: 192px;
   height: 64px;
