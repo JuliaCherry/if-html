@@ -50,37 +50,48 @@
             </h1>
             <form class="search" action="/" method="get">
               <div class="search__content">
-                <label class="search__content-label" for="destination"
+                <label
+                  class="search__content search__content--label-destination"
+                  for="destination"
                   >Your destination or hotel name</label
                 >
                 <input
-                  class="search__content-destination"
+                  class="search__content search__content--destination"
                   type="text"
                   id="destination"
                   placeholder="New York"
                 />
               </div>
-              <div class="search__content search__content--date">
-                <label class="search__content-label" for="date"
+              <div class="search__content">
+                <label
+                  class="search__content search__content--label-date"
+                  for="date"
                   >Check-in — Check-out</label
                 >
                 <input
-                  class="search__content-date"
+                  class="search__content search__content--date"
                   type="text"
                   id="date"
                   placeholder="Tue 15 Sept — Sat 19 Sept"
                 />
               </div>
-              <div class="search__content search__content--pax">
-                <label class="search__content-label" for="pax"></label>
+              <div class="search__content">
+                <label
+                  class="search__content search__content--label-pax"
+                  for="pax"
+                ></label>
                 <input
-                  class="search__content-pax"
+                  class="search__content search__content--pax"
                   type="text"
                   id="pax"
                   placeholder="2 Adults — 0 Children — 1 Room"
                 />
               </div>
-              <button class="search__content-btn" type="submit">Search</button>
+              <div class="search__content">
+                <button class="search__content-btn" type="submit">
+                  Search
+                </button>
+              </div>
             </form>
             <div class="social">
               <div class="social__item">
