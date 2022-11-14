@@ -305,6 +305,7 @@ a {
 
 .advantages__container-content {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 16px;
   align-items: center;
@@ -369,3 +370,4 @@ a {
   font-size: 14px;
   margin-top: 44px;
 }
+
