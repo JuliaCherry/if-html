@@ -125,8 +125,6 @@ a {
 .logo__img {
   width: 205px;
   height: 40px;
-  background-image: url(../images/sprite.png);
-  background-size: cover;
 }
 
 .menu {
@@ -148,12 +146,8 @@ a {
 }
 
 .menu__button--theme {
-  display: inline-block;
   width: 30px;
   height: 30px;
-  background-image: url(../images/sprite.png);
-  background-size: cover;
-  background-position: -156px;
   margin-left: 48px;
 }
 
@@ -161,14 +155,11 @@ a {
   display: inline-block;
   width: 40px;
   height: 40px;
-  background-image: url(../images/sprite.png);
-  background-size: cover;
-  background-position: -248px;
   margin-left: 24px;
 }
 
 .header__content-inner {
-  padding-top: 202px;
+  padding-top: 191px;
   padding-bottom: 120px;
 }
 
@@ -276,17 +267,11 @@ a {
 .social__item--google-play {
   width: 135px;
   height: 40px;
-  background-image: url(../images/sprite.png);
-  background-size: cover;
-  background-position: -293px;
 }
 
 .social__item--app-store {
   width: 120px;
   height: 40px;
-  background-image: url(../images/sprite.png);
-  background-size: cover;
-  background-position: -444px;
 }
 
 .advantages__container-item {
