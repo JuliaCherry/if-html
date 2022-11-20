@@ -105,7 +105,7 @@ a {
   padding: 0 16px;
 }
 
-.header {
+.top-section {
   background-image: url(../images/background.png);
   min-height: 100vh;
   background-size: cover;
@@ -129,46 +129,50 @@ a {
 
 .menu {
   display: flex;
+  gap: 48px;
+  align-items: center;
 }
 
-.menu__list-item {
-  float: left;
+.menu__list {
+  display: flex;
+  gap: 24px;
 }
 
-.menu__link--active {
-  margin-right: 24px;
-  line-height: 12px;
+.menu__link {
   padding-bottom: 8px;
 }
 
-.menu__link--active:hover {
+.menu__link:hover {
   border-bottom: 4px #f5bd41 solid;
 }
 
 .menu__button--theme {
   width: 30px;
   height: 30px;
-  margin-left: 48px;
 }
 
 .menu__button--account {
-  display: inline-block;
   width: 40px;
   height: 40px;
-  margin-left: 24px;
 }
 
-.header__content-inner {
-  padding-top: 191px;
+.top-section__content-inner {
+  padding-top: 196px;
   padding-bottom: 120px;
 }
 
-.header__content-tittle {
+.top-section__content-tittle {
   font-size: 50px;
   font-weight: 500;
   color: #ffffff;
-  padding-bottom: 100px;
+  padding-bottom: 145px;
   line-height: 59px;
+}
+
+.search {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 8px;
 }
 
 .search__content {
@@ -180,19 +184,16 @@ a {
 .search__content--label-destination {
   color: #ffffff;
   position: absolute;
-  top: 0;
+  top: -45px;
   left: 24px;
 }
 
 .search__content--destination {
-  width: 480px;
+  width: 467px;
   height: 64px;
   padding-left: 24px;
   border: 3px solid transparent;
   border-radius: 8px 0 0 8px;
-  position: absolute;
-  top: 44px;
-  left: 2px;
 }
 
 .search__content--destination:focus {
@@ -203,8 +204,8 @@ a {
 .search__content--label-date {
   color: #ffffff;
   position: absolute;
-  top: 0;
-  left: 491px;
+  top: -45px;
+  left: 25px;
 }
 
 .search__content--date {
@@ -212,9 +213,6 @@ a {
   height: 64px;
   border: 3px solid transparent;
   text-align: center;
-  position: absolute;
-  left: 467px;
-  top: 44px;
 }
 
 .search__content--date:focus {
@@ -222,20 +220,11 @@ a {
   border-radius: 8px;
 }
 
-.search__content--label-pax {
-  position: absolute;
-  top: 0;
-  left: 726px;
-}
-
 .search__content--pax {
   width: 314px;
-  text-align: center;
   height: 64px;
   border: 3px solid transparent;
-  position: absolute;
-  left: 726px;
-  top: 44px;
+  text-align: center;
 }
 
 .search__content--pax:focus {
@@ -252,16 +241,13 @@ a {
   font-weight: 500;
   border-radius: 8px;
   line-height: 28px;
-  position: absolute;
-  top: 44px;
-  right: 0;
 }
 
 .social {
   display: flex;
   justify-content: center;
   gap: 16px;
-  padding-top: 230px;
+  padding-top: 120px;
 }
 
 .social__item--google-play {
@@ -369,56 +355,4 @@ a {
 .footer__container-copyright {
   font-size: 14px;
   margin-top: 44px;
-}
-
-/*for mobile*/
-@media (max-width: 480px) {
-  .container {
-    max-width: none;
-  }
-
-  .advantages__container-item {
-    padding-top: 24px;
-    padding-bottom: 40px;
-    gap: 32px;
-  }
-
-  .advantages__container-content {
-    gap: 40px;
-  }
-
-  .advantages__container-subtitle {
-    font-size: 28px;
-  }
-
-  .advantages__container-underline {
-    display: none;
-  }
-
-  .advantages__container-desk {
-    font-size: 15px;
-  }
-
-  .advantages__container-communication {
-    width: 58px;
-    height: 58px;
-  }
-
-  .advantages__container-support {
-    width: 52px;
-    height: 64px;
-  }
-
-  .advantages__container-booking {
-    width: 70px;
-    height: 47px;
-  }
-
-  .advantages__container-reviews {
-    width: 64px;
-    height: 58px;
-  }
-  .advantages__container-image {
-    gap: 20px;
-  }
 }

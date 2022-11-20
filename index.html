@@ -230,9 +230,9 @@
         </defs>
       </symbol>
     </svg>
-    <header class="header">
+    <div class="top-section">
       <div class="container">
-        <div class="header__top">
+        <header class="header__top">
           <div class="header__top-inner">
             <div class="logo">
               <a class="logo__home" href="#">
@@ -242,36 +242,30 @@
               </a>
             </div>
             <nav class="menu">
-              <ul class="menu__list">
-                <li class="menu__list-item">
-                  <a class="menu__link menu__link--active" href="#">Stays</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__link" href="#">Attractions</a>
-                </li>
-                <li class="menu__list-item">
-                  <button class="menu__button" type="submit">
-                    <svg class="menu__button menu__button--theme">
-                      <use href="./images/sprite.svg#theme" />
-                    </svg>
-                  </button>
-                </li>
-                <li class="menu__list-item">
-                  <button class="menu__button" type="submit">
-                    <svg class="menu__button menu__button--account">
-                      <use href="./images/sprite.svg#account" />
-                    </svg>
-                  </button>
-                </li>
-              </ul>
+              <div class="menu__list">
+                <a class="menu__link" href="#">Stays</a>
+                <a class="menu__link" href="#">Attractions</a>
+              </div>
+              <div class="menu__list">
+                <button class="menu__button" type="submit">
+                  <svg class="menu__button menu__button--theme">
+                    <use href="./images/sprite.svg#theme" />
+                  </svg>
+                </button>
+                <button class="menu__button" type="submit">
+                  <svg class="menu__button menu__button--account">
+                    <use href="./images/sprite.svg#account" />
+                  </svg>
+                </button>
+              </div>
             </nav>
           </div>
-        </div>
+        </header>
       </div>
       <div class="container">
-        <div class="header-content">
-          <div class="header__content-inner">
-            <h1 class="header__content-tittle">
+        <div class="top-section__content">
+          <div class="top-section__content-inner">
+            <h1 class="top-section__content-tittle">
               Discover stays <br />
               to live, work or just relax
             </h1>
@@ -280,45 +274,32 @@
                 <label
                   class="search__content search__content--label-destination"
                   for="destination"
-                  >Your destination or hotel name</label
-                >
+                  >Your destination or hotel name</label>
                 <input
                   class="search__content search__content--destination"
                   type="text"
                   id="destination"
-                  placeholder="New York"
-                />
+                  placeholder="New York"/>
               </div>
               <div class="search__content">
                 <label
                   class="search__content search__content--label-date"
                   for="date"
-                  >Check-in — Check-out</label
-                >
+                  >Check-in — Check-out</label>
                 <input
                   class="search__content search__content--date"
                   type="text"
                   id="date"
-                  placeholder="Tue 15 Sept — Sat 19 Sept"
-                />
+                  placeholder="Tue 15 Sept — Sat 19 Sept"/>
               </div>
               <div class="search__content">
-                <label
-                  class="search__content search__content--label-pax"
-                  for="pax"
-                ></label>
                 <input
                   class="search__content search__content--pax"
                   type="text"
                   id="pax"
-                  placeholder="2 Adults — 0 Children — 1 Room"
-                />
+                  placeholder="2 Adults — 0 Children — 1 Room"/>
               </div>
-              <div class="search__content">
-                <button class="search__content-btn" type="submit">
-                  Search
-                </button>
-              </div>
+              <button class="search__content-btn" type="submit">Search</button>
             </form>
             <div class="social">
               <div class="social__item">
@@ -339,7 +320,7 @@
           </div>
         </div>
       </div>
-    </header>
+    </div>
     <div class="advantages">
       <div class="container">
         <div class="advantages__container-item">
