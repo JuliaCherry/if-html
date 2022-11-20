@@ -369,15 +369,78 @@ a {
   margin-top: 44px;
 }
 
-/*for mobile*/
-@media (max-width: 480px) {
+/*for tablet*/
+
+@media (max-width: 767px) {
+
   .container {
-    max-width: none;
+    max-width: 650px;
   }
 
   .advantages__container-item {
     padding-top: 24px;
     padding-bottom: 40px;
+    gap: 32px;
+  }
+
+  .advantages__container-content {
+    gap:78px;
+    flex-wrap: wrap;
+  }
+
+  .advantages__container-subtitle {
+    font-size: 28px;
+  }
+
+  .advantages__container-desk {
+    font-size: 15px;
+  }
+
+  .advantages__container-communication {
+    width: 58px;
+    height: 58px;
+  }
+
+  .advantages__container-support {
+    width: 52px;
+    height: 64px;
+  }
+
+  .advantages__container-booking {
+    width: 70px;
+    height: 47px;
+  }
+
+  .advantages__container-reviews {
+    width: 64px;
+    height: 58px;
+  }
+
+  .advantages__container-image {
+    gap: 20px;
+  }
+
+.footer__container-item {
+  font-size: 1.5rem;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer__container-copyright {
+  font-size: 1rem;
+}
+
+}
+/*for mobile*/
+
+@media (max-width: 568px) {
+
+  .container {
+    max-width: none;
+  }
+
+  .advantages__container-item {
+    padding:24px 57px 40px;
     gap: 32px;
   }
 
