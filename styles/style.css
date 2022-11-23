@@ -158,6 +158,11 @@ a {
   border-bottom: 4px solid var(--accent-yellow);
 }
 
+.menu__button_burger,
+.search__content-sm {
+  display: none;
+}
+
 .menu__button--theme {
   width: 3rem;
   height: 3rem;
@@ -444,6 +449,93 @@ a {
   .advantages__container-item {
     padding: 24px 57px 40px;
     gap: 32px;
+  }
+
+  .header__top {
+    padding-top: 12px;
+  }
+
+  .logo__img {
+    width: 12.2rem;
+    height: 2.4rem;
+  }
+
+  .menu {
+    gap: 1.6rem;
+  }
+
+  .menu__list--hidden,
+  .search__content {
+    display: none;
+  }
+
+  .menu__button--theme {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  .menu__button--account {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .menu__button_burger {
+    display: block;
+  }
+
+  .button-img {
+    width: 2.4rem;
+    height: 1.6rem;
+  }
+
+  .top-section__content-inner {
+    padding-top: 5.2rem;
+    padding-bottom: 4rem;
+  }
+
+  .top-section__content-tittle {
+    font-size: 3rem;
+    padding-bottom: 3.1rem;
+  }
+
+  .search {
+    flex-wrap: wrap;
+    background-color: var(--accent-yellow);
+    border-radius: 0;
+    border: 4px solid var(--accent-yellow);
+  }
+
+  .search__content-sm {
+    display: flex;
+    height: 4.8rem;
+    position: relative;
+    width: 100%;
+  }
+
+  .search__content--destination-sm {
+    height: 100%;
+    width: 100%;
+    border: 4px solid var(--accent-yellow);
+    border-radius: 8px;
+    padding-left: 3.6rem;
+
+  }
+
+  .search__content--destination-sm::placeholder {
+    color: var(--text-color-main);
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .search__content-icon {
+  }
+  .search-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+    position: absolute;
+    z-index: 100;
+    top: 1.6rem;
+    left: 1.2rem;
   }
 
   .advantages__container-content {

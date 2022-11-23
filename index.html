@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./images/favicon/favicon-32x32.png" />
     <link rel="stylesheet" href="styles/style.css" />
-    <title>lesson-8</title>
+    <title>lesson-9</title>
   </head>
   <body>
     <svg
@@ -242,11 +242,11 @@
               </a>
             </div>
             <nav class="menu">
-              <div class="menu__list">
+              <div class="menu__list menu__list--hidden">
                 <a class="menu__link" href="#">Stays</a>
                 <a class="menu__link" href="#">Attractions</a>
               </div>
-              <div class="menu__list">
+              <div class="menu__list menu__list-button">
                 <button class="menu__button" type="submit">
                   <svg class="menu__button menu__button--theme">
                     <use href="./images/sprite.svg#theme" />
@@ -255,6 +255,11 @@
                 <button class="menu__button" type="submit">
                   <svg class="menu__button menu__button--account">
                     <use href="./images/sprite.svg#account" />
+                  </svg>
+                </button>
+                <button class="menu__button menu__button_burger" type="submit">
+                  <svg class="button-img">
+                    <use href="./images/sprite.svg#burger" />
                   </svg>
                 </button>
               </div>
@@ -274,30 +279,48 @@
                 <label
                   class="search__content search__content--label-destination"
                   for="destination"
-                  >Your destination or hotel name</label>
+                  >Your destination or hotel name
+                </label>
                 <input
                   class="search__content search__content--destination"
                   type="text"
                   id="destination"
-                  placeholder="New York"/>
+                  placeholder="New York"
+                />
+              </div>
+              <div class="search__content-sm">
+                <button class="search__content-icon">
+                  <svg class="search-icon">
+                    <use href="./images/sprite.svg#search" />
+                  </svg>
+                </button>
+                <input
+                  class="search__content-sm search__content--destination-sm"
+                  type="text"
+                  id="destination-sm"
+                  placeholder="Your destination or hotel name"
+                />
               </div>
               <div class="search__content">
                 <label
                   class="search__content search__content--label-date"
                   for="date"
-                  >Check-in — Check-out</label>
+                  >Check-in — Check-out</label
+                >
                 <input
                   class="search__content search__content--date"
                   type="text"
                   id="date"
-                  placeholder="Tue 15 Sept — Sat 19 Sept"/>
+                  placeholder="Tue 15 Sept — Sat 19 Sept"
+                />
               </div>
               <div class="search__content">
                 <input
                   class="search__content search__content--pax"
                   type="text"
                   id="pax"
-                  placeholder="2 Adults — 0 Children — 1 Room"/>
+                  placeholder="2 Adults — 0 Children — 1 Room"
+                />
               </div>
               <button class="search__content-btn" type="submit">Search</button>
             </form>
@@ -363,9 +386,9 @@
       <div class="container">
         <div class="footer__container-item">
           <div class="footer__logo">
-              <svg class="footer__logo-img">
-                <use href="./images/sprite.svg#logo-small" />
-              </svg>
+            <svg class="footer__logo-img">
+              <use href="./images/sprite.svg#logo-small" />
+            </svg>
           </div>
           <ul class="footer__container-about">
             <li class="footer__container-subtitle">About</li>
