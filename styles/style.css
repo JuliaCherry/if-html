@@ -632,7 +632,7 @@ a {
     font-size: 2.8rem;
   }
 
-  .advantages__container-underline {
+  .advantages__container-subtitle::after{
     display: none;
   }
 
