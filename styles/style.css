@@ -490,6 +490,10 @@ a {
     font-size: 2.8rem;
   }
 
+  .advantages__container-subtitle::after {
+    transform: translateX(58%);
+  }
+
   .advantages__container-desk {
     font-size: 1.5rem;
   }
@@ -519,6 +523,21 @@ a {
     width: 100%;
   }
 
+  .homes__container-item {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    gap: 4rem;
+  }
+  .homes__container-content {
+    flex-wrap: wrap;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .arrow {
+    display: none;
+  }
+
   .footer__container-item {
     font-size: 1.5rem;
     padding-top: 5rem;
@@ -534,11 +553,6 @@ a {
 @media (max-width: 568px) {
   .container {
     max-width: none;
-  }
-
-  .advantages__container-item {
-    padding: 24px 57px 40px;
-    gap: 32px;
   }
 
   .header__top {
@@ -690,6 +704,11 @@ a {
 
   .social {
     padding-top: 3.2rem;
+  }
+
+  .advantages__container-item {
+    padding: 24px 57px 40px;
+    gap: 32px;
   }
 
   .advantages__container-content {
