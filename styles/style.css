@@ -7,6 +7,7 @@
   --accent-blue: #3077c6;
   --text-color-main: #383838;
   --stroke-color-additional: #bfbfbf;
+  --bg-color-main: #eaf0f9;
 }
 
 * {
@@ -288,7 +289,6 @@ a {
 }
 
 .advantages__container-subtitle {
-  text-align: center;
   font-size: 4rem;
   font-weight: 500;
 }
@@ -340,6 +340,47 @@ a {
 
 .advantages__container-desk {
   line-height: 1.4;
+}
+
+.homes {
+  background-color: var(--bg-color-main);
+}
+
+.homes__container-item {
+  display: flex;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  align-items: center;
+  flex-direction: column;
+  gap: 10.6rem;
+}
+
+.homes__container-subtitle {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.homes__container-content {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  align-items: center;
+  width: 100%;
+}
+
+.homes__container-image {
+  height: 43.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.homes__container-text--hotel {
+  color: var(--accent-blue);
+}
+
+.homes__container-text--city {
+  color: var(--stroke-color-additional);
 }
 
 .footer {
