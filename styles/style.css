@@ -8,6 +8,7 @@
   --text-color-main: #383838;
   --stroke-color-additional: #bfbfbf;
   --bg-color-main: #eaf0f9;
+  --stroke-color-main: #f3f3f4;
 }
 
 * {
@@ -366,6 +367,7 @@ a {
   gap: 16px;
   align-items: center;
   width: 100%;
+  position: relative;
 }
 
 .homes__container-image {
@@ -381,6 +383,31 @@ a {
 
 .homes__container-text--city {
   color: var(--stroke-color-additional);
+}
+
+.arrow {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--stroke-color-main);
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: -20px;
+  top: 128px;
+}
+
+.arrow::before {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  border-radius: 2px;
+  border-left: 2px solid var(--text-color-main);
+  transform: rotate(-135deg);
+  border-bottom: 2px solid var(--text-color-main);
 }
 
 .footer {
