@@ -394,6 +394,7 @@ a {
   position: absolute;
   right: -20px;
   top: 128px;
+  box-shadow: 2px 3px 20px 2px rgb(34 60 80 / 20%);
 }
 
 .arrow::before {
@@ -531,7 +532,6 @@ a {
   .homes__container-content {
     flex-wrap: wrap;
     gap: 3rem;
-    text-align: center;
   }
 
   .arrow {
@@ -750,6 +750,51 @@ a {
   .advantages__container-image {
     gap: 20px;
     height: 104px;
+  }
+
+  .homes__container-item {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    gap: 3.2rem;
+  }
+
+  .homes__container-subtitle {
+    font-size: 2.8rem;
+  }
+
+  .homes__container-content {
+    flex-wrap: nowrap;
+    gap: 1.6rem;
+  }
+
+  .homes__container-image--hidden {
+    display: none;
+  }
+
+  .homes__container-image {
+    height: 20.9rem;
+    gap: 0.8rem;
+    width: 15.6rem;
+  }
+
+  .homes__container-text {
+    font-size: 1.2rem;
+  }
+
+  .arrow {
+    display: block;
+    height: 2.8rem;
+    width: 2.8rem;
+    right: -1.4rem;
+    top: 5.8rem;
+  }
+
+  .arrow::after {
+    top: 4px;
+    left: 4px;
+    width: 2px;
+    height: 7px;
+    display: block;
   }
 
   .footer__container-item {
