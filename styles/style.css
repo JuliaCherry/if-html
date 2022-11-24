@@ -293,18 +293,13 @@ a {
   font-weight: 500;
 }
 
-.advantages__container-tittle {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-}
-
-.advantages__container-underline {
+.advantages__container-subtitle::after {
+  content: "";
+  display: block;
+  border-bottom: 0.4rem solid var(--accent-yellow);
   width: 10rem;
-  height: 0.4rem;
-  background-color: var(--accent-yellow);
-  border: none;
+  padding-top: 2rem;
+  transform: translateX(104%);
 }
 
 .advantages__container-content {
@@ -401,7 +396,7 @@ a {
     text-align: center;
   }
 
-  .search__content-btn{
+  .search__content-btn {
     width: 100%;
     height: 6rem;
     border: 4px solid var(--accent-yellow);
@@ -442,7 +437,7 @@ a {
   }
 
   .advantages__container-booking {
-    width: 7.0rem;
+    width: 7rem;
     height: 4.7rem;
   }
 
