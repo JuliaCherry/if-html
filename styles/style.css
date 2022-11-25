@@ -9,6 +9,7 @@
   --stroke-color-additional: #bfbfbf;
   --bg-color-main: #eaf0f9;
   --stroke-color-main: #f3f3f4;
+  --bg--color-section: #e5e5e5;
 }
 
 * {
@@ -112,6 +113,11 @@ body {
 
 a {
   color: var(--general-white);
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 500;
 }
 
 .container {
@@ -289,11 +295,6 @@ a {
   padding-bottom: 114px;
 }
 
-.advantages__container-subtitle {
-  font-size: 4rem;
-  font-weight: 500;
-}
-
 .advantages__container-subtitle::after {
   content: "";
   display: block;
@@ -356,11 +357,6 @@ a {
   gap: 10.6rem;
 }
 
-.homes__container-subtitle {
-  font-size: 4rem;
-  font-weight: 500;
-}
-
 .homes__container-content {
   display: flex;
   justify-content: center;
@@ -409,6 +405,77 @@ a {
   border-left: 2px solid var(--text-color-main);
   transform: rotate(-135deg);
   border-bottom: 2px solid var(--text-color-main);
+}
+
+.destination {
+  background-color: var(--bg--color-section);
+}
+
+.destination__container-item {
+  display: flex;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  align-items: center;
+  flex-direction: column;
+  gap: 10.4rem;
+}
+
+.destination__container-content {
+  display: flex;
+  gap: 6.5rem;
+  flex-direction: column;
+}
+
+.destination__container-btn {
+  width: 50%;
+  background-color: var(--stroke-color-main);
+  display: flex;
+  border-radius: 8px;
+}
+
+.destination__btn {
+  background-color: var(--stroke-color-main);
+  width: 19.2rem;
+  height: 6.4rem;
+  border-radius: 8px;
+  font-size: 2.4rem;
+}
+
+.destination__btn--places {
+  width: 23rem;
+}
+
+.destination__btn:focus {
+  background-color: var(--accent-blue);
+  color: var(--general-white);
+}
+
+.destination__container-slider {
+  display: flex;
+  gap: 1.6rem;
+  position: relative;
+}
+
+.destination__container-image {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.destinations__container-text {
+  color: var(--accent-blue);
+}
+
+.arrow{
+  position: absolute;
+  top: 39.5rem;
+  left: 59.5rem;
+}
+
+.arrow::before{
+ transform: rotateZ(-45deg);
+  left: 1.25rem;
+
 }
 
 .footer {
