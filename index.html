@@ -275,11 +275,11 @@
               to live, work or just relax
             </h1>
             <form class="search" action="/" method="get">
-              <div class="search__content">
+              <div class="search__content search__content-destination">
                 <label
                   class="search__content search__content--label-destination"
                   for="destination"
-                  >Your destination or hotel name
+                >
                 </label>
                 <input
                   class="search__content search__content--destination"
@@ -301,12 +301,12 @@
                   placeholder="Your destination or hotel name"
                 />
               </div>
-              <div class="search__content">
+              <div class="search__content search__content-date">
                 <label
                   class="search__content search__content--label-date"
                   for="date"
-                  >Check-in — Check-out</label
                 >
+                </label>
                 <input
                   class="search__content search__content--date"
                   type="text"
@@ -315,30 +315,30 @@
                 />
               </div>
               <div class="search__content-sm">
-                <label
-                  class="search__content-sm search__content-sm--label-in"
-                  for="date-in"
-                  >Check-in date
-                </label>
-                <input
-                  class="search__content-sm search__content-sm--in"
-                  type="text"
-                  id="date-in"
-                  placeholder="Tue 15 Sept 2020"
-                />
-                <label
-                  class="search__content-sm search__content-sm--label-out"
-                  for="date-out"
-                  >Check-out date
-                </label>
-                <input
-                  class="search__content-sm search__content-sm--out"
-                  type="text"
-                  id="date-out"
-                  placeholder="Sat 19 Sept 2020"
-                />
+                <div class="search__content-in-item">
+                  <label class="search__content-sm--label-in" for="date-in"
+                    >Check-in date
+                  </label>
+                  <input
+                    class="search__content-sm search__content-sm--in"
+                    type="text"
+                    id="date-in"
+                    placeholder="Tue 15 Sept 2020"
+                  />
+                </div>
+                <div class="search__content-out-item">
+                  <label class="search__content-sm--label-out" for="date-out"
+                    >Check-out date
+                  </label>
+                  <input
+                    class="search__content-sm search__content-sm--out"
+                    type="text"
+                    id="date-out"
+                    placeholder="Sat 19 Sept 2020"
+                  />
+                </div>
               </div>
-              <div class="search__content">
+              <div class="search__content search__content-pax">
                 <input
                   class="search__content search__content--pax"
                   type="text"
@@ -347,39 +347,39 @@
                 />
               </div>
               <div class="search__content-sm">
-                <label
-                  class="search__content-sm search__content-sm--label-adult"
-                  for="adult"
-                  >Adults
-                </label>
-                <input
-                  class="search__content-sm search__content-sm--adult"
-                  type="text"
-                  id="adult"
-                  placeholder="2"
-                />
-                <label
-                  class="search__content-sm search__content-sm--label-child"
-                  for="child"
-                  >Children
-                </label>
-                <input
-                  class="search__content-sm search__content-sm--child"
-                  type="text"
-                  id="child"
-                  placeholder="0"
-                />
-                <label
-                  class="search__content-sm search__content-sm--label-room"
-                  for="room"
-                  >Rooms
-                </label>
-                <input
-                  class="search__content-sm search__content-sm--room"
-                  type="text"
-                  id="room"
-                  placeholder="1"
-                />
+                <div class="search__content-adult">
+                  <label class="search__content-sm--label-adult" for="adult"
+                    >Adults
+                  </label>
+                  <input
+                    class="search__content-sm search__content-sm--adult"
+                    type="text"
+                    id="adult"
+                    placeholder="2"
+                  />
+                </div>
+                <div class="search__content-child">
+                  <label class="search__content-sm--label-child" for="child"
+                    >Children
+                  </label>
+                  <input
+                    class="search__content-sm search__content-sm--child"
+                    type="text"
+                    id="child"
+                    placeholder="0"
+                  />
+                </div>
+                <div class="search__content-room">
+                  <label class="search__content-sm--label-room" for="room"
+                    >Rooms
+                  </label>
+                  <input
+                    class="search__content-sm search__content-sm--room"
+                    type="text"
+                    id="room"
+                    placeholder="1"
+                  />
+                </div>
               </div>
               <button class="search__content-btn" type="submit">Search</button>
             </form>
@@ -462,7 +462,7 @@
                 Saint Petersburg, Russia
               </figcaption>
             </figure>
-            <figure class="homes__container-image">
+            <figure class="homes__container-image homes__container-image--sunshine ">
               <img src="./images/a-sunshine.png" alt="Apartment Sunshine" />
               <figcaption
                 class="homes__container-text homes__container-text--hotel"
@@ -474,6 +474,7 @@
               >
                 Santa Cruz de Tenerife, Spain
               </figcaption>
+              <div class="arrow-mobile"></div>
             </figure>
             <figure
               class="homes__container-image homes__container-image--hidden"
@@ -491,7 +492,7 @@
               </figcaption>
             </figure>
             <figure
-              class="homes__container-image homes__container-image--hidden"
+              class="homes__container-image homes__container-image--hidden position__arrow "
             >
               <img src="./images/h-friendship.png" alt="Hostel Friendship" />
               <figcaption
@@ -504,8 +505,8 @@
               >
                 Berlin, Germany
               </figcaption>
+            <div class="arrow-homes"></div>
             </figure>
-            <div class="arrow-1"></div>
           </div>
         </div>
       </div>
@@ -591,9 +592,10 @@
               off your first booking
             </p>
             <button class="sign-up__content-btn">Install</button>
+              <div class="arrow"></div>
+            </div>
           </div>
         </div>
-      </div>
     </section>
     <footer class="footer">
       <div class="container">
