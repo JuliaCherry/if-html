@@ -1038,6 +1038,36 @@ h2 {
     font-size: 1.2rem;
   }
 
+  .destination__container-slider{
+    position: relative;
+  }
+
+  .arrow-2 {
+    width: 2.8rem;
+    height: 2.8rem;
+    background-color: var(--stroke-color-main);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 2px 3px 20px 2px rgb(34 60 80 / 20%);
+    position: absolute;
+    top: 36%;
+    left: 31.5rem;
+  }
+
+  .arrow-2:before {
+    transform: rotateZ(-135deg);
+    left: 0.6rem;
+    position: absolute;
+    top: 0.9rem;
+    content: "";
+    display: block;
+    width: 13px;
+    height: 13px;
+    border-radius: 2px;
+    border-left: 2px solid var(--text-color-main);
+    border-bottom: 2px solid var(--text-color-main);
+  }
+
   .footer__container-item {
     padding: 40px 52px;
   }
