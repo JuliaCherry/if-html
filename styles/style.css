@@ -487,7 +487,7 @@ h2 {
   color: var(--accent-blue);
 }
 
-.arrow-2 {
+.arrow-destination {
   width: 4rem;
   height: 4rem;
   background-color: var(--stroke-color-main);
@@ -499,9 +499,9 @@ h2 {
   left: 59.5rem;
 }
 
-.arrow-2::before {
+.arrow-destination:before {
   transform: rotateZ(-45deg);
-  left: 1.25rem;
+  left: 1.3rem;
   position: absolute;
   top: 15px;
   content: "";
@@ -592,6 +592,10 @@ h2 {
 
 .close:after {
   transform: rotate(-45deg);
+}
+
+.sign-up__container-content-mobile {
+  display: none;
 }
 
 .footer {
@@ -719,6 +723,14 @@ h2 {
 
   .arrow-1 {
     display: none;
+  }
+
+  .destination__container-slider {
+    flex-wrap: wrap;
+  }
+
+  .destination__container-btn {
+    width: 100%;
   }
 
   .footer__container-item {
@@ -1038,11 +1050,11 @@ h2 {
     font-size: 1.2rem;
   }
 
-  .destination__container-slider{
+  .destination__container-slider {
     position: relative;
   }
 
-  .arrow-2 {
+  .arrow-destination {
     width: 2.8rem;
     height: 2.8rem;
     background-color: var(--stroke-color-main);
@@ -1054,7 +1066,7 @@ h2 {
     left: 31.5rem;
   }
 
-  .arrow-2:before {
+  .arrow-destination:before {
     transform: rotateZ(-135deg);
     left: 0.6rem;
     position: absolute;
@@ -1066,6 +1078,74 @@ h2 {
     border-radius: 2px;
     border-left: 2px solid var(--text-color-main);
     border-bottom: 2px solid var(--text-color-main);
+  }
+
+  .sign-up__container-content {
+    display: none;
+  }
+
+  .sign-up__container-content-mobile {
+    padding-bottom: 2.4rem;
+    padding-top: 2.4rem;
+    display: block;
+  }
+
+  .sign-up__content-mobile {
+    display: flex;
+    gap: 1.6rem;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .sign-up__content-logo {
+    background-color: var(--accent-blue);
+    border-radius: 4px;
+    width: 5.8rem;
+    height: 5.8rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .sign-up__content-subtitle-mobile {
+    font-size: 1.2rem;
+  }
+
+  .sing-up__content-logo-mobile {
+    width: 100%;
+  }
+
+  .close-mobile {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 1.6rem;
+    height: 1.6rem;
+    cursor: pointer;
+  }
+
+  .close-mobile:before,
+  .close-mobile:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background: #bfbfbf;
+  }
+
+  .close-mobile:before {
+    transform: rotate(45deg);
+  }
+
+  .close-mobile:after {
+    transform: rotate(-45deg);
+  }
+
+  .sign-up__content-btn {
+    font-size: 1.4rem;
+    color: var(--accent-blue);
+    border: none;
+    width: 4.1rem;
   }
 
   .footer__container-item {
