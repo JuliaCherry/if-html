@@ -381,7 +381,7 @@ h2 {
   color: var(--stroke-color-additional);
 }
 
-.arrow {
+.arrow-1 {
   width: 4rem;
   height: 4rem;
   background-color: var(--stroke-color-main);
@@ -393,7 +393,7 @@ h2 {
   box-shadow: 2px 3px 20px 2px rgb(34 60 80 / 20%);
 }
 
-.arrow::before {
+.arrow-1::before {
   position: absolute;
   top: 15px;
   left: 10px;
@@ -466,16 +466,111 @@ h2 {
   color: var(--accent-blue);
 }
 
-.arrow{
+.arrow-2 {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--stroke-color-main);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 2px 3px 20px 2px rgb(34 60 80 / 20%);
   position: absolute;
   top: 39.5rem;
   left: 59.5rem;
 }
 
-.arrow::before{
- transform: rotateZ(-45deg);
+.arrow-2::before {
+  transform: rotateZ(-45deg);
   left: 1.25rem;
+  position: absolute;
+  top: 15px;
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  border-radius: 2px;
+  border-left: 2px solid var(--text-color-main);
+  border-bottom: 2px solid var(--text-color-main);
+}
 
+.sign-up {
+  background-color: var(--bg-color-main);
+}
+
+.sign-up__container-content {
+  display: flex;
+  gap: 2.4rem;
+  padding: 5.1rem 2.4rem 5.2rem;
+  position: relative;
+}
+
+.sign-up__icon-group {
+  position: relative;
+  width: 8.6rem;
+  height: 8.6rem;
+}
+
+.sign-up__icon-circle {
+  background-color: var(--stroke-color-main);
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.sing-up__container-icon {
+  width: 5rem;
+  height: 4.4rem;
+  position: absolute;
+  top: 2.5rem;
+  left: 2rem;
+}
+
+.sign-up__content-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2.1rem;
+  align-items: flex-start;
+}
+
+.sign-up__content-subtitle {
+  font-weight: 500;
+}
+
+.sign-up__content-btn {
+  width: 12.8rem;
+  height: 4.8rem;
+  border: 1px solid var(--accent-blue);
+  color: var(--accent-blue);
+  border-radius: 8px;
+  font-size: 1.8rem;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 36px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.close:before,
+.close:after {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 10px;
+  width: 30px;
+  height: 2px;
+  background: #bfbfbf;
+}
+
+.close:before {
+  transform: rotate(45deg);
+}
+
+.close:after {
+  transform: rotate(-45deg);
 }
 
 .footer {
@@ -601,7 +696,7 @@ h2 {
     gap: 3rem;
   }
 
-  .arrow {
+  .arrow-1 {
     display: none;
   }
 
@@ -848,7 +943,7 @@ h2 {
     font-size: 1.2rem;
   }
 
-  .arrow {
+  .arrow-1 {
     display: block;
     height: 2.8rem;
     width: 2.8rem;
@@ -856,7 +951,7 @@ h2 {
     top: 5.8rem;
   }
 
-  .arrow::after {
+  .arrow-1::after {
     top: 4px;
     left: 4px;
     width: 2px;
