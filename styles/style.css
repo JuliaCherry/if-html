@@ -458,6 +458,14 @@ h2 {
   width: 23rem;
 }
 
+.destination__btn--places:before {
+  content: "Places of interest";
+}
+
+.destination__btn--places--hidden {
+  display: none;
+}
+
 .destination__btn:focus {
   background-color: var(--accent-blue);
   color: var(--general-white);
@@ -965,11 +973,69 @@ h2 {
   }
 
   .arrow-1::after {
-    top: 4px;
-    left: 4px;
+    top: 7px;
+    left: 6px;
     width: 2px;
     height: 7px;
     display: block;
+  }
+
+  .arrow-1::before {
+    position: absolute;
+    top: 8px;
+    left: 6px;
+  }
+
+  .destination {
+    background-color: var(--general-white);
+  }
+
+  .destination__container-item {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 3.2rem;
+  }
+
+  .destination__container-subtitle {
+    font-size: 2.8rem;
+  }
+
+  .destination__container-content {
+    gap: 2.4rem;
+  }
+
+  .destination__container-btn {
+    display: flex;
+    gap: 1.6rem;
+    border-radius: 0;
+    background-color: transparent;
+    width: 100%;
+  }
+
+  .destination__btn {
+    background-color: var(--general-white);
+    width: 9.9rem;
+    height: 3.2rem;
+    border-radius: 4px;
+    font-size: 1.9rem;
+    border: 1px solid var(--stroke-color-main);
+  }
+
+  .destination__btn--places:before {
+    content: "Places";
+  }
+
+  .destination__container-image--hidden {
+    display: none;
+  }
+
+  .destination__container-image {
+    gap: 0.8rem;
+    width: 15.6rem;
+  }
+
+  .destinations__container-text {
+    font-size: 1.2rem;
   }
 
   .footer__container-item {
