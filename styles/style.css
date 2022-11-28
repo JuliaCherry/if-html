@@ -160,11 +160,24 @@ h2 {
 }
 
 .menu__link {
-  padding-bottom: 8px;
+  position: relative;
+  line-height: 2;
 }
 
-.menu__link:hover {
-  border-bottom: 4px solid var(--accent-yellow);
+.menu__link:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background-color: var(--accent-yellow);
+  content: "";
+  transition: width 0.4s ease-out;
+}
+
+.menu__link:hover:after,
+.menu__link:focus:after {
+  width: 100%;
 }
 
 .menu__button_burger,
