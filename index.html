@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./images/favicon/favicon-32x32.png" />
     <link rel="stylesheet" href="styles/style.css" />
-    <title>lesson-8</title>
+    <title>lesson-10</title>
   </head>
   <body>
     <svg
@@ -242,11 +242,11 @@
               </a>
             </div>
             <nav class="menu">
-              <div class="menu__list">
+              <div class="menu__list menu__list--hidden">
                 <a class="menu__link" href="#">Stays</a>
                 <a class="menu__link" href="#">Attractions</a>
               </div>
-              <div class="menu__list">
+              <div class="menu__list menu__list-button">
                 <button class="menu__button" type="submit">
                   <svg class="menu__button menu__button--theme">
                     <use href="./images/sprite.svg#theme" />
@@ -255,6 +255,11 @@
                 <button class="menu__button" type="submit">
                   <svg class="menu__button menu__button--account">
                     <use href="./images/sprite.svg#account" />
+                  </svg>
+                </button>
+                <button class="menu__button menu__button_burger" type="submit">
+                  <svg class="button-img">
+                    <use href="./images/sprite.svg#burger" />
                   </svg>
                 </button>
               </div>
@@ -270,11 +275,11 @@
               to live, work or just relax
             </h1>
             <form class="search" action="/" method="get">
-              <div class="search__content">
+              <div class="search__content search__content-destination">
                 <label
                   class="search__content search__content--label-destination"
                   for="destination"
-                  >Your destination or hotel name
+                >
                 </label>
                 <input
                   class="search__content search__content--destination"
@@ -283,11 +288,24 @@
                   placeholder="New York"
                 />
               </div>
-              <div class="search__content">
+              <div class="search__content-sm">
+                <button class="search__content-icon">
+                  <svg class="search-icon">
+                    <use href="./images/sprite.svg#search" />
+                  </svg>
+                </button>
+                <input
+                  class="search__content-sm search__content-sm--destination"
+                  type="text"
+                  id="destination-sm"
+                  placeholder="Your destination or hotel name"
+                />
+              </div>
+              <div class="search__content search__content-date">
                 <label
                   class="search__content search__content--label-date"
                   for="date"
-                  >Check-in — Check-out
+                >
                 </label>
                 <input
                   class="search__content search__content--date"
@@ -296,13 +314,72 @@
                   placeholder="Tue 15 Sept — Sat 19 Sept"
                 />
               </div>
-              <div class="search__content">
+              <div class="search__content-sm">
+                <div class="search__content-in-item">
+                  <label class="search__content-sm--label-in" for="date-in"
+                    >Check-in date
+                  </label>
+                  <input
+                    class="search__content-sm search__content-sm--in"
+                    type="text"
+                    id="date-in"
+                    placeholder="Tue 15 Sept 2020"
+                  />
+                </div>
+                <div class="search__content-out-item">
+                  <label class="search__content-sm--label-out" for="date-out"
+                    >Check-out date
+                  </label>
+                  <input
+                    class="search__content-sm search__content-sm--out"
+                    type="text"
+                    id="date-out"
+                    placeholder="Sat 19 Sept 2020"
+                  />
+                </div>
+              </div>
+              <div class="search__content search__content-pax">
                 <input
                   class="search__content search__content--pax"
                   type="text"
                   id="pax"
                   placeholder="2 Adults — 0 Children — 1 Room"
                 />
+              </div>
+              <div class="search__content-sm">
+                <div class="search__content-adult">
+                  <label class="search__content-sm--label-adult" for="adult"
+                    >Adults
+                  </label>
+                  <input
+                    class="search__content-sm search__content-sm--adult"
+                    type="text"
+                    id="adult"
+                    placeholder="2"
+                  />
+                </div>
+                <div class="search__content-child">
+                  <label class="search__content-sm--label-child" for="child"
+                    >Children
+                  </label>
+                  <input
+                    class="search__content-sm search__content-sm--child"
+                    type="text"
+                    id="child"
+                    placeholder="0"
+                  />
+                </div>
+                <div class="search__content-room">
+                  <label class="search__content-sm--label-room" for="room"
+                    >Rooms
+                  </label>
+                  <input
+                    class="search__content-sm search__content-sm--room"
+                    type="text"
+                    id="room"
+                    placeholder="1"
+                  />
+                </div>
               </div>
               <button class="search__content-btn" type="submit">Search</button>
             </form>
@@ -329,10 +406,7 @@
     <div class="advantages">
       <div class="container">
         <div class="advantages__container-item">
-          <div class="advantages__container-tittle">
-            <h2 class="advantages__container-subtitle">What do we offer</h2>
-            <div class="advantages__container-underline"></div>
-          </div>
+          <h2 class="advantages__container-subtitle">What do we offer</h2>
           <div class="advantages__container-content">
             <div class="advantages__container-image">
               <svg class="advantages__container-support">
@@ -366,9 +440,67 @@
         </div>
       </div>
     </div>
+    <section class="homes">
+      <div class="container">
+        <div class="homes__container-item">
+          <h2 class="homes__container-subtitle">Homes guests loves</h2>
+          <div class="homes__container-content">
+            <div class="homes__container-image">
+              <img src="./images/h-leopold.png" alt="Hotel Leopold" />
+              <p class="homes__container-text homes__container-text--hotel">
+                Hotel Leopold
+              </p>
+              <p class="homes__container-text homes__container-text--city">
+                Saint Petersburg, Russia
+              </p>
+            </div>
+            <div
+              class="homes__container-image homes__container-image--sunshine"
+            >
+              <img src="./images/a-sunshine.png" alt="Apartment Sunshine" />
+              <p class="homes__container-text homes__container-text--hotel">
+                Apartment Sunshine
+              </p>
+              <p class="homes__container-text homes__container-text--city">
+                Santa Cruz de Tenerife, Spain
+              </p>
+              <div class="arrow-mobile"></div>
+            </div>
+            <div class="homes__container-image homes__container-image--hidden">
+              <img src="./images/v-kunerad.png" alt="Villa Kunerad" />
+              <p
+                class="homes__container-text-hotel homes__container-text--hotel"
+              >
+                Villa Kunerad
+              </p>
+              <p class="homes__container-text homes__container-text--city">
+                Vysokie Tatry, Slowakia
+              </p>
+            </div>
+            <div
+              class="homes__container-image homes__container-image--hidden position__arrow"
+            >
+              <img src="./images/h-friendship.png" alt="Hostel Friendship" />
+              <p class="homes__container-text homes__container-text--hotel">
+                Hostel Friendship
+              </p>
+              <p class="homes__container-text homes__container-text--city">
+                Berlin, Germany
+              </p>
+              <div class="arrow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="footer">
       <div class="container">
         <div class="footer__container-item">
+          <div class="footer__logo">
+            <svg class="footer__logo-img">
+              <use href="./images/sprite.svg#logo-small" />
+            </svg>
+          </div>
           <ul class="footer__container-about">
             <li class="footer__container-subtitle">About</li>
             <li><a href="#">How Triphouse works</a></li>
