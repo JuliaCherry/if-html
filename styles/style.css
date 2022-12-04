@@ -894,6 +894,10 @@ h2 {
     width: 100%;
   }
 
+  .slider {
+    flex-wrap: wrap;
+  }
+
   .footer__container-item {
     font-size: 1.5rem;
     padding-top: 5rem;
