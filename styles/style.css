@@ -755,6 +755,10 @@ h2 {
   line-height: 21px;
 }
 
+.dots-navigation {
+  display: none;
+}
+
 .footer {
   background-color: var(--general-blue);
 }
@@ -1331,6 +1335,88 @@ h2 {
     width: 4.1rem;
     height: 1.6rem;
     font-weight: 500;
+  }
+
+  .reviews {
+    background-color: var(--bg--color-section);
+  }
+
+  .reviews__container-items {
+    padding-top: 40px;
+    padding-bottom: 0;
+    gap: 32px;
+  }
+
+  .reviews__container-subtitle {
+    font-size: 28px;
+  }
+
+  .slider__content--hidden {
+    display: none;
+  }
+
+  .slider__content {
+    gap: 16px;
+    font-size: 15px;
+  }
+
+  .slider__content-image-bali {
+    width: 327px;
+    height: 325px;
+  }
+
+  .slider__content-icon-account {
+    width: 43px;
+    height: 43px;
+  }
+
+  .slider__content-top {
+    gap: 12px;
+  }
+
+  .slider__content-prise {
+    display: none;
+  }
+
+  .slider__content-bottom {
+    padding: 0;
+    gap: 20px;
+  }
+
+  .slider__content-description {
+    padding: 0;
+  }
+
+  .slider__content-rating {
+    width: 39px;
+    height: 26px;
+  }
+
+  .slider__content-review-amount {
+    font-size: 12px;
+  }
+
+  .slider__content-reviews {
+    line-height: 18px;
+  }
+
+  .dots-navigation {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 40px;
+  }
+
+  .dots-navigation__dots {
+    border: 1px solid #333333;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+  }
+
+  .dots-navigation__dots:first-child {
+    background-color: #333333;
   }
 
   .footer__container-item {
