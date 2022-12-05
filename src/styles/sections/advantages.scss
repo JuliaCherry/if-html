@@ -1,0 +1,161 @@
+.advantages {
+  &__container-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 88px;
+    padding-top: 120px;
+    padding-bottom: 114px;
+  }
+
+  &__container-subtitle::after {
+    content: '';
+    display: block;
+    border-bottom: 0.4rem solid var(--accent-yellow);
+    width: 10rem;
+    padding-top: 2rem;
+    transform: translateX(104%);
+  }
+
+  &__container-content {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__container-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 25%;
+  }
+
+  &__container-communication {
+    width: 8.3rem;
+    height: 8.3rem;
+  }
+
+  &__container-support {
+    width: 7.5rem;
+    height: 9.2rem;
+  }
+
+  &__container-booking {
+    width: 10rem;
+    height: 6.7rem;
+  }
+
+  &__container-reviews {
+    width: 9.2rem;
+    height: 8.3rem;
+  }
+
+  &__container-desk {
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 767px) {
+  .advantages {
+    &__container-item {
+      padding-top: 2.4rem;
+      padding-bottom: 4rem;
+      gap: 3.2rem;
+    }
+
+    &__container-content {
+      gap: 7.8rem;
+      flex-wrap: wrap;
+    }
+
+    &__container-subtitle {
+      font-size: 2.8rem;
+    }
+
+    &__container-subtitle::after {
+      transform: translateX(58%);
+    }
+
+    &__container-desk {
+      font-size: 1.5rem;
+    }
+
+    &__container-communication {
+      width: 5.8rem;
+      height: 58px;
+    }
+
+    &__container-support {
+      width: 5.2rem;
+      height: 6.4rem;
+    }
+
+    &__container-booking {
+      width: 7rem;
+      height: 4.7rem;
+    }
+
+    &__container-reviews {
+      width: 6.4rem;
+      height: 5.8rem;
+    }
+
+    &__container-image {
+      gap: 2.2rem;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 568px) {
+  .advantages {
+    &__container-item {
+      padding: 24px 57px 40px;
+      gap: 32px;
+    }
+
+    &__container-content {
+      gap: 3.2rem;
+    }
+
+    &__container-subtitle {
+      font-size: 2.8rem;
+    }
+
+    &__container-subtitle::after {
+      display: none;
+    }
+
+    &__container-desk {
+      font-size: 1.5rem;
+    }
+
+    &__container-communication {
+      width: 58px;
+      height: 58px;
+    }
+
+    &__container-support {
+      width: 52px;
+      height: 64px;
+    }
+
+    &__container-booking {
+      width: 70px;
+      height: 47px;
+    }
+
+    &__container-reviews {
+      width: 64px;
+      height: 58px;
+    }
+
+    &__container-image {
+      gap: 20px;
+      height: 104px;
+    }
+  }
+}

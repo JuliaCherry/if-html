@@ -1,0 +1,26 @@
+mixin sign-up
+  section.sign-up
+    .container
+      .sign-up__container-content
+        .sign-up__icon-group
+          .sign-up__icon-circle
+          svg.sign-up__icon-container
+            use(href='#sign-up')
+        .sign-up__content-inner
+          h3.sign-up__content-subtitle
+            | Sign up and get 20% off your first booking
+          button.sign-up__content-btn Sign up
+        .close
+      .sign-up__container-content-mobile
+        .sign-up__content-mobile
+          .close-mobile
+          .sign-up__content-logo
+            svg.sing-up__content-logo-mobile
+              use(href='#logo-small')
+          p.sign-up__content-subtitle-mobile
+            | Sign up in the app and get 20%
+            br
+            |
+            | off your first booking
+          button.sign-up__content-btn Install
+          .arrow

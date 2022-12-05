@@ -1,0 +1,80 @@
+mixin top-section
+  main.top-section
+    .container
+      header.header
+        .header__top-inner
+          .logo
+            a.logo__home(href='#')
+              svg.logo__img
+                use(href='#logo')
+          nav.menu
+            .menu__list.menu__list--hidden
+              a.menu__link(href='#') Stays
+              a.menu__link(href='#') Attractions
+            .menu__list.menu__list-button
+              button.menu__button(type='submit')
+                svg.menu__button.menu__button--theme
+                  use(href='#theme')
+              button.menu__button(type='submit')
+                svg.menu__button.menu__button--account
+                  use(href='#account')
+              button.menu__button.menu__button-burger(type='submit')
+                svg.button-img
+                  use(href='#burger')
+    .container
+      section.top-section__content
+        .top-section__content-inner
+          h1.top-section__content-tittle
+            | Discover stays
+            br
+            |
+            | to live, work or just relax
+          form.search(action='/', method='get')
+            .search__content.search__content-destination
+              label.search__content.search__content--label-destination(for='destination')
+              input#destination.search__content.search__content--destination(type='text', placeholder='New York')
+            .search__content-sm
+              button.search__content-icon
+                svg.search-icon
+                  use(href='#search')
+              input#destination-sm.search__content-sm.search__content-sm--destination(
+                type='text',
+                placeholder='Your destination or hotel name'
+              )
+            .search__content.search__content-date
+              label.search__content.search__content--label-date(for='date')
+              input#date.search__content.search__content--date(type='text', placeholder='Tue 15 Sept — Sat 19 Sept')
+            .search__content-sm
+              .search__content-in-item
+                label.search__content-sm--label-in(for='date-in')
+                  | Check-in date
+                input#date-in.search__content-sm.search__content-sm--in(type='text', placeholder='Tue 15 Sept 2020')
+              .search__content-out-item
+                label.search__content-sm--label-out(for='date-out')
+                  | Check-out date
+                input#date-out.search__content-sm.search__content-sm--out(type='text', placeholder='Sat 19 Sept 2020')
+            .search__content.search__content-pax
+              input#pax.search__content.search__content--pax(type='text', placeholder='2 Adults — 0 Children — 1 Room')
+            .search__content-sm
+              .search__content-adult
+                label.search__content-sm--label-adult(for='adult')
+                  | Adults
+                input#adult.search__content-sm.search__content-sm--adult(type='text', placeholder='2')
+              .search__content-child
+                label.search__content-sm--label-child(for='child')
+                  | Children
+                input#child.search__content-sm.search__content-sm--child(type='text', placeholder='0')
+              .search__content-room
+                label.search__content-sm--label-room(for='room')
+                  | Rooms
+                input#room.search__content-sm.search__content-sm--room(type='text', placeholder='1')
+            button.search__content-btn(type='submit') Search
+          .social
+            .social__item
+              a.social__item-link(href='#')
+                svg.social__item.social__item--google-play
+                  use(href='#googleplay')
+            .social__item
+              a.social__item-link(href='#')
+                svg.social__item.social__item--app-store
+                  use(href='#appstore')
