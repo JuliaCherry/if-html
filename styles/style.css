@@ -9,7 +9,7 @@
   --stroke-color-additional: #bfbfbf;
   --bg-color-main: #eaf0f9;
   --stroke-color-main: #f3f3f4;
-  --bg--color-section: #e5e5e5;
+  --bg-color-section: #e5e5e5;
 }
 
 * {
@@ -180,7 +180,7 @@ h2 {
   width: 100%;
 }
 
-.menu__button_burger,
+.menu__button-burger,
 .search__content-sm {
   display: none;
 }
@@ -448,7 +448,7 @@ h2 {
 }
 
 .destination {
-  background-color: var(--bg--color-section);
+  background-color: var(--bg-color-section);
 }
 
 .destination__container-item {
@@ -565,7 +565,7 @@ h2 {
   position: absolute;
 }
 
-.sing-up__container-icon {
+.sign-up__icon-container {
   width: 5rem;
   height: 4.4rem;
   position: absolute;
@@ -943,7 +943,7 @@ h2 {
     height: 2.4rem;
   }
 
-  .menu__button_burger {
+  .menu__button-burger {
     display: block;
   }
 
@@ -1165,13 +1165,6 @@ h2 {
 
   .arrow-mobile:after {
     top: 7px;
-    left: 6px;
-    width: 2px;
-    height: 7px;
-  }
-
-  .arrow-mobile:after {
-    top: 7px;
     left: 5px;
     width: 13px;
     height: 13px;
@@ -1342,7 +1335,7 @@ h2 {
   }
 
   .reviews {
-    background-color: var(--bg--color-section);
+    background-color: var(--bg-color-section);
   }
 
   .reviews__container-items {
