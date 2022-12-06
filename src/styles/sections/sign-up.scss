@@ -1,0 +1,156 @@
+.sign-up {
+  background-color: var(--bg-color-main);
+
+  &__container-content {
+    display: flex;
+    gap: 2.4rem;
+    padding: 5.1rem 2.4rem 5.2rem;
+    position: relative;
+  }
+
+  &__container-content-mobile {
+    display: none;
+  }
+
+  &__icon-group {
+    position: relative;
+    width: 8.6rem;
+    height: 8.6rem;
+  }
+
+  &__icon-container {
+    width: 5rem;
+    height: 4.4rem;
+    position: absolute;
+    top: 2.5rem;
+    left: 2rem;
+  }
+
+  &__icon-circle {
+    background-color: var(--stroke-color-main);
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+  &__content-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 2.1rem;
+    align-items: flex-start;
+  }
+
+  &__content-subtitle {
+    font-weight: 500;
+  }
+
+  &__content-btn {
+    width: 12.8rem;
+    height: 4.8rem;
+    border: 1px solid var(--accent-blue);
+    color: var(--accent-blue);
+    border-radius: 8px;
+    font-size: 1.8rem;
+  }
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 36px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.close::before,
+.close::after {
+  content: '';
+  position: absolute;
+  top: 21px;
+  left: 10px;
+  width: 30px;
+  height: 2px;
+  background: #bfbfbf;
+}
+
+.close::before {
+  transform: rotate(45deg);
+}
+
+.close::after {
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 568px) {
+  .sign-up {
+    &__container-content {
+      display: none;
+    }
+
+    &__container-content-mobile {
+      padding-bottom: 2.4rem;
+      padding-top: 2.4rem;
+      display: block;
+    }
+
+    &__content-mobile {
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__content-logo {
+      background-color: var(--accent-blue);
+      border-radius: 4px;
+      width: 5.8rem;
+      height: 5.8rem;
+      display: flex;
+      align-items: center;
+    }
+
+    &__content-subtitle-mobile {
+      font-size: 1.2rem;
+    }
+
+    &__content-logo-mobile {
+      width: 100%;
+      max-height: 1rem;
+    }
+
+    &__content-btn {
+      font-size: 1.4rem;
+      color: var(--accent-blue);
+      border: none;
+      width: 4.1rem;
+      height: 1.6rem;
+      font-weight: 500;
+    }
+  }
+
+  .close-mobile {
+    width: 1.6rem;
+    height: 1.6rem;
+    cursor: pointer;
+  }
+
+  .close-mobile::before,
+  .close-mobile::after {
+    content: '';
+    position: absolute;
+    top: 2.7rem;
+    width: 20px;
+    height: 1px;
+    background: #bfbfbf;
+  }
+
+  .close-mobile::before {
+    transform: rotate(45deg);
+  }
+
+  .close-mobile::after {
+    transform: rotate(-45deg);
+  }
+}
